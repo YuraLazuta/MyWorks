@@ -1,0 +1,210 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(../DIPLOM/img/block_1/slide2.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+}
+/* Blok 1 */
+.main-contact{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    position: relative;
+    z-index: 1;
+}
+
+.menu{
+    width: 60%;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.menu_link{
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.2s linear;
+    margin: 0 20px 0 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+.menu_link:hover{
+    color: #c7b297;
+}
+
+/* Blok 2 */
+
+.containers-body{
+    height: 270px;
+    max-width: 90%;
+    margin: 0px auto;
+	
+}
+
+.flexjps-row{
+	display: flex;
+    justify-content: space-around;
+	align-items: center;
+	position: relative;
+    top: 30%;
+	margin: 0 auto;
+    
+}
+
+
+/* Forma */
+
+.gpsCard{
+	height: 400px;
+	width: 600px;
+	position: relative;
+}
+
+.form {
+	background-color: rgba(251, 250, 248, .4);
+	border: 2px solid #c7b295;
+	box-shadow: 0 0 0 10px #fff;
+	height: 350px;
+	width: 420px;
+	text-align: center;
+	
+}
+
+.mainText {
+	font-size: 27px;
+	margin: 40px 0 5px 0;
+	color: #030303;
+}
+
+.secondText {
+	font-size: 18px;
+	margin: 0;
+	color: #030303;
+	margin-bottom: 25px;
+}
+
+.formInput {
+	background: #f1f1f1;
+	height: 50px;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	width: 300px;
+	margin: 15px auto 0 auto;
+}
+
+.formInput i {
+	font-size: 17px;
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	padding-right: 10px;
+}
+
+.formInput input {
+	flex: .7;
+	background: #f1f1f1;
+	border: none;
+	outline: none;
+	font-size: 15px;
+}
+
+.send {
+	border: none;
+	color: #fff;
+	background: #c7b295;
+	width: 180px;
+	height: 40px;
+	border-radius: 40px;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 30px;
+	box-shadow: 0 0 20px 0 rgba(199, 178, 149, .8);
+	transition: .4s;
+	outline: none;
+}
+
+.send:hover {
+	box-shadow: 0 0 25px 5px rgba(5, 140, 221, 1);
+	cursor: pointer;
+}
+
+/* Footer */
+
+.foot{
+    color: white;
+	position: relative;
+	top: 36%;
+}
+
+.foot-body{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-image{
+    opacity: 0.4;
+}
+
+.foot-image:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+@media (max-width:768px){
+
+	.main-contact{
+		display: flex;
+		margin: 0 auto;
+		justify-content: center;
+	}
+
+	.header{
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.flexjps-row{
+		flex-direction: column;
+	}
+
+	body{
+		height: 1000px;
+	}
+
+	.gpsCard{
+		position: relative;
+		top: 30px;
+		left:30px;
+	}
+}
+
+
+
+
